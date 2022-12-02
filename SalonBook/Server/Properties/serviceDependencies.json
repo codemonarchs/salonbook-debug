@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "signalr": {
+      "type": "signalr",
+      "connectionId": "Azure:SignalR:ConnectionString",
+      "dynamicId": null
+    },
+    "Main": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:Main",
+      "dynamicId": null
+    },
+    "Users": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:Users",
+      "dynamicId": null
+    }
+  }
+}

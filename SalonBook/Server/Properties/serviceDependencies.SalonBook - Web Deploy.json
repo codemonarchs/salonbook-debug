@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "signalr": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.SignalRService/SignalR/SalonBook",
+      "type": "signalr.azure",
+      "connectionId": "Azure:SignalR:ConnectionString",
+      "dynamicId": null
+    },
+    "Main": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/salonbook/databases/SalonBook.Main",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:Main",
+      "dynamicId": null
+    },
+    "Users": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/salonbook/databases/SalonBook.Users",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:Users",
+      "dynamicId": null
+    }
+  }
+}
